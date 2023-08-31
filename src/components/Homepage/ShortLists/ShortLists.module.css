@@ -1,0 +1,93 @@
+.shortWrapper {
+  padding: 40px 0 10px 5px;
+  font-size: 1.2rem;
+}
+.shortWrapper > span {
+  margin-left: 10px;
+}
+.shortWrapper > a {
+  color: #f8f8f8;
+  font-size: 1rem;
+  background: transparent;
+  border: solid #f8f8f8 1px;
+  padding: 8px 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.shortWrapper > a:hover {
+  background: #f8f8f8;
+  transform: scale(0.98);
+  color: #161616;
+}
+.listWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+.shortArticle {
+  padding: 0;
+  transition: 0.3s;
+  width: 90%;
+  position: relative;
+  aspect-ratio: 1 / 1.6;
+  flex-shrink: 0;
+  margin: 5px;
+  border: solid #f8f8f8 1px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.shortArticle:hover {
+  transform: scale(0.98);
+}
+.shortArticle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titleDiv {
+  background: #161616bb;
+  color: #f8f8ff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.titleDiv span {
+  margin: 0 30px;
+  transition: 0.3s;
+  text-align: center;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 300px) {
+  .titleDiv span {
+    font-size: 1.2rem;
+  }
+  .shortArticle {
+    width: 250px;
+    aspect-ratio: 1 / 1.4;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .titleDiv span {
+    font-size: 1.5rem;
+  }
+  .shortArticle {
+    width: 400px;
+    height: 400px;
+  }
+}

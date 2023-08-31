@@ -1,0 +1,42 @@
+.adminMainDiv {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100svh - 70px);
+}
+.accountDiv > * {
+  margin: 5px 0;
+}
+.adminMainDiv > div {
+  display: flex;
+  margin: 30px 0;
+  flex-direction: column;
+}
+.adminMainDiv input[type="file"] {
+  max-width: 200px;
+}
+.adminMainDiv input {
+  background: transparent;
+  border: solid #f8f8ff 1px;
+  color: #f8f8ff;
+  padding: 8px;
+  border-radius: 6px;
+}
+.adminMainDiv select {
+  background: transparent;
+  color: #f8f8ff;
+  border: solid #f8f8ff 1px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.adminMainDiv button {
+  background: #f8f8ff;
+  color: #161616;
+  border-radius: 10px;
+  border: solid transparent 1px;
+  padding: 10px;
+  cursor: pointer;
+}

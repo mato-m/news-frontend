@@ -1,0 +1,22 @@
+.catMain {
+  margin-top: 70px;
+  min-height: calc(100svh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.catMain > span {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+}
+.articleDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

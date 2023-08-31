@@ -1,0 +1,75 @@
+.mainNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 1000;
+  transition: 0.3s;
+  color: #f8f8ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  height: 60px;
+}
+.mainNavScrolled {
+  background: #161616;
+}
+
+.hb {
+  cursor: pointer;
+  width: 45px;
+  transition: 0.3s;
+}
+.hb:hover {
+  transform: scale(0.93);
+}
+.categoriesNavHidden {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 60px;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  transition: 0.5s;
+  background: #161616;
+  width: 100vw;
+  height: 0px;
+  overflow-y: auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+a {
+  width: 100%;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #f8f8ff;
+  transition: 0.3s;
+}
+.categoriesNavHidden :hover {
+  transform: scale(1.03);
+}
+.categoriesNavHidden a div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.categoriesNavHidden a div svg {
+  border: solid #f8f8ff 1px;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.categoriesNavHidden a div svg:hover {
+  background: #f8f8ff;
+  color: #161616;
+}
+.categoriesNavVisible {
+  height: calc(100svh - 60px);
+}

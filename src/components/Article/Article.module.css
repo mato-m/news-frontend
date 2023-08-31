@@ -1,0 +1,140 @@
+.mainArticleDiv {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100svh - 70px);
+}
+.mainArticleDiv > span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.heroWrapper {
+  position: relative;
+  width: 100%;
+}
+.heroWrapper > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.articleWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleWrapper {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #161616bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mdWrapper {
+  margin: 0 10px;
+}
+.tagsWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+.tagsWrapper a {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background: #f8f8ff;
+  color: #161616;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: unset;
+}
+.commentsWrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.commentsWrapper > span {
+  text-align: center;
+  margin: 20px 0;
+}
+.commentDiv {
+  display: flex;
+  margin: 5px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  border: solid #f8f8ff 1px;
+  padding: 10px 5px;
+  text-align: left;
+  width: 90%;
+}
+.addCommentDiv {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addCommentDiv > button {
+  margin: 10px 0;
+  cursor: pointer;
+  background: #f8f8ff;
+  border: solid transparent 1px;
+  color: #161616;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+}
+.addCommentDiv > textarea {
+  resize: none;
+  height: 2rem;
+  padding: 10px;
+  width: 90%;
+  border: solid #f8f8ff 1px;
+  color: #f8f8ff;
+  font-family: "Dosis", sans-serif;
+  background: transparent;
+}
+.commentDiv > span:first-child {
+  font-size: 1.5rem;
+}
+.commentDiv > span:nth-child(2) {
+  margin: 5px 0 10px 0;
+}
+.deleteCommentBtn {
+  margin-top: 10px;
+  border: solid #f8f8ff 1px;
+  background: transparent;
+  color: #f8f8ff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.deleteCommentBtn:hover {
+  background: #f8f8ff;
+  color: #161616;
+}
+@media screen and (min-width: 500px) {
+  .addCommentDiv > textarea,
+  .addCommentDiv > button,
+  .commentDiv {
+    width: 400px;
+  }
+}

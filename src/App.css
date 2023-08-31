@@ -1,0 +1,39 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  background: #161616;
+  color: #f8f8ff;
+}
+.carousel-root {
+  overflow: hidden;
+}
+.carousel-root,
+.slider,
+.slider-wrapper,
+.carousel-slider {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8f8ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9b9;
+}
+.w-md-editor-toolbar,
+.w-md-editor-preview,
+.wmde-markdown {
+  background: #161616 !important;
+}

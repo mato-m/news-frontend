@@ -1,0 +1,38 @@
+.loginDiv {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100svh - 70px);
+}
+.loginDiv > input {
+  border: solid #f8f8ff 1px;
+  color: #f8f8ff;
+  padding: 10px;
+  background: transparent;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+.loginDiv > button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid transparent 1px;
+  color: #161616;
+  min-width: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  background: #f8f8ff;
+}
+.loginDiv > span {
+  text-align: center;
+}
+.loginDiv > button:hover {
+  transform: scale(0.97);
+}
+.loginDiv > span > a {
+  padding: 0;
+  margin-left: 5px;
+}

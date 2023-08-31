@@ -1,0 +1,35 @@
+.heroMainDiv {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroMainDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titleDiv {
+  background: #161616bb;
+  color: #f8f8ff;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleDiv span {
+  margin: 0 30px;
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+  .titleDiv span {
+    font-size: 2rem;
+  }
+}
